@@ -1,0 +1,16 @@
+//not much code needed as but still...
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int n;
+    float p;
+    float ans;
+    printf("please enter the value of the consecutive coin flips of possibilities p and q that you would like");
+    scanf("%d",n);
+    printf("please define the probability of the event p occuring(eg.1/2 if a fair coin)");
+    scanf("%f",p);
+    //the actual computation, the logic for which is shown on paper elsewhere
+    ans = ((1-pow(p,n))/(pow(p,n)*(1-p)));
+    printf("the answer is %f", ans);
+}
